@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/config/categories.css">
+    <title>fds</title>
+</head>
+<body>
+    <header>
+        <div class="container-start">
+                <span class="material-icons menu-icon">menu</span>
+                <span class="title">Matheus Sena</span>
+        </div>
+        <div class="container-categories">
+            <div class="droptown">
+                <button class="droptown-button">Categorias <span class="material-icons">arrow_drop_down</span></button>
+                <div class="droptown-content">
+                    <a href="">Ciências Humanas</a>
+                    <hr>
+                    <a href="">Ciência Política</a>
+                    <hr>
+                    <a href="">Anotações Diárias</a>
+                    <hr>
+                    <a href="">Observações Literárias</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <hr class="pos-hdr">
+    <div class="spoiler-categories">
+        <div>
+            <ul>
+                <li><a href="" id="cHumanas">Ciências Humanas</a></li>
+                <li><a href="" id="cPolitica">Ciência Política</a></li>
+                <li><a href="" id="aDiarias">Anotações Diárias</a></li>
+                <li><a href="" id="oLiterarias">Observações Literárias</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="section-posts">
+        <div class="new-post">
+            <div class="image">
+                <span class="category">ANOTAÇÕES DIÁRIAS</span>
+                <img src="images/olavo-de-carvalho.jpg" alt="Imagem de Olavo de Carvalho">
+                <span class="credits">&copy; 2017 Olavo de Carvalho . Direção artística MauroVentura.com</span>
+            </div>
+            <h1 class="title">Tenho dificuldades em articular ideias.</h1>
+            <p class="spoiler">Há alguns dias recebi um vídeo que acredito ser do Olavo de Carvalho, que trata da necessidade de dominar a cultura literária formal antes de entrar em um debate — dominando-a, é possível desenvolver ou aprimorar argumentos que sirvam de base para sustentar as teses apresentadas — caso contrário, o debatedor está sujeito à falta de convicção e pode se perder em suas próprias palavras.</p>
+            <p class="content">Sinto vergonha de um antigo debate que participei em sala de aula. Não fui capaz de defender minhas próprias teses, me perdi nos meus argumentos e percebi a mediocridade intelectual que apresento. No entanto, vou investir no meu desenvolvimento intelectual a fim de não passar vergonha no próximo embate de pensamentos e ter total controle sobre meus argumentos.</p>
+            <span class="date">20 de novembro de 2024</span>
+        </div>
+    </div>
+    <div class="section-filter">
+        <!-- Como não há posts das outras categorias, caso selecionado pelo usuário retornará um 'não encontrado'. -->
+         <div class="not-full" id="notFull">
+            <section>
+                <h1 class="title">Ainda não há posts a respeito da categoria <span id="categorySelected"></span>.</h1>
+            </section>
+         </div>
+    </div>
+    <script src="scriptCategories.js"></script>
+</body>
+</html>
